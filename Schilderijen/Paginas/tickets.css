@@ -4,6 +4,9 @@ body {
     background-color: #666;
     color: black;
     text-align: center;
+    font-family: 'Arima', sans-serif;
+    background-color: #f9f9f9;
+    color: black;
 }
 
 .header {
