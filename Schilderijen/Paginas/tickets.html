@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Roy Lichtenstein Museum</title>
+    <link rel="stylesheet" href="tickets.css">
+    <script defer src="tickets.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-item dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="schilderijen.html">Schilderijen</a>
+                <a href="tickets.html">Tickets</a>
+            </div>
+        </div>
+        <div class="nav-item">De Roy Lichtenstein Museum</div>
+        <button id="modeToggle" class="mode-toggle" onclick="toggleMode()">🌙</button>
+    </div>
+
+    <div class="container">
+        <h2>Tickets:</h2>
+        <div class="input-group">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="datum">Datum van Bezoek:</label>
+            <input type="date" id="datum" required>
+        </div>
+
+        <div class="input-group">
+            <label for="ticketAantal">Hoeveelheid tickets:</label>
+            <input type="number" id="ticketAantal" value="1" min="1" required>
+        </div>
+
+        <div class="input-group">
+            <label for="betaalmethode">Betaalmethode:</label>
+            <select id="betaalmethode" required>
+                <option value="creditcard">Creditcard</option>
+                <option value="ideal">iDEAL</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="specialeVerzoeken">Speciale Verzoeken (optioneel):</label>
+            <textarea id="specialeVerzoeken"></textarea>
+        </div>
+
+        <div class="prijs-section">
+            <h3>Prijs: €<span id="prijs">10</span></h3>
+        </div>
+
+        <button onclick="betaalTickets()">Betalen</button>
+    </div>
+</body>
+</html>

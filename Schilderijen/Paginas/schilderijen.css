@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #A0B8C8;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.art-item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+.art-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.highlight-title {
+    color: red;
+    margin-top: 40px;
+}
+
+.featured-art {
+    position: relative;
+    display: inline-block;
+}
+
+.featured-art img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.featured-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: red;
+}
+
+.featured-label {
+    color: aliceblue;
+}
+
+body.light-mode {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #A0B8C8;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.mode-toggle {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+}
+
+.container {
+    padding: 50px;
+    background-color: inherit;
+    color: inherit;
+}
+
+.input-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .header {
+    background-color: #444;
+}
+
+body.dark-mode .container {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: red;
+}
