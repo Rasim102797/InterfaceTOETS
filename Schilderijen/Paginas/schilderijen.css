@@ -1,28 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #666;
-    color: white;
-    text-align: center;
     font-family: 'Arima', sans-serif;
+    margin: 0;
     background-color: #f9f9f9;
     color: black;
+    text-align: center;
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #A0B8C8;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
     padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    display: flex;
-    justify-content: space-around;
+    background-color: #A0B8C8;
     z-index: 1000;
+    position: sticky; top: 0;
 }
 
+.nav-item {
+    text-align: center;
+}
+
+.nav-item.dropdown {
+    text-align: left;
+}
+
+.mode-toggle {
+    justify-self: end; 
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
 
 .container {
     padding: 20px;
@@ -34,17 +43,16 @@ h2 {
 }
 
 .art-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
     gap: 20px;
+    justify-items: center;
 }
 
 .art-item {
     background-color: #444;
     padding: 10px;
     border-radius: 10px;
-    width: 180px;
     text-align: center;
 }
 
@@ -82,6 +90,7 @@ p {
     padding: 5px 10px;
     font-size: 20px;
     font-weight: bold;
+    color: aliceblue;
 }
 
 .nav-item a {
@@ -94,10 +103,6 @@ p {
     color: red;
 }
 
-.featured-label {
-    color: aliceblue;
-}
-
 body.light-mode {
     background-color: #f9f9f9;
     color: black;
@@ -106,20 +111,6 @@ body.light-mode {
 body.dark-mode {
     background-color: #333;
     color: white;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #A0B8C8;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
 }
 
 .mode-toggle {
@@ -213,10 +204,6 @@ body.dark-mode button:hover {
     border: none;
     cursor: pointer;
     text-align: center;
-}
-
-.nav-item .dropbtn:hover {
-    background-color: red;
 }
 
 .nav-item .dropdown-content {
